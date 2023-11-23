@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.dexterbrings.temperaturumrechner.MainController">
+   <children>
+      <Label fx:id="lblFahrenheit" layoutX="94.0" layoutY="90.0" prefHeight="51.0" prefWidth="171.0" text="Grad Fahrenheit">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfFahrenheit" layoutX="280.0" layoutY="90.0" prefHeight="25.0" prefWidth="194.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tfCelsius" editable="false" layoutX="280.0" layoutY="181.0" prefHeight="51.0" prefWidth="194.0">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+      <Label fx:id="lblCelsius" layoutX="94.0" layoutY="181.0" prefHeight="51.0" prefWidth="171.0" text="Grad Celsius">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnUmrechnen" layoutX="195.0" layoutY="274.0" mnemonicParsing="false" onAction="#onClick" prefHeight="72.0" prefWidth="171.0" text="Umrechnen">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblFehler" layoutX="88.0" layoutY="53.0" prefHeight="20.0" prefWidth="386.0" text="Bitte gib eine ganze Zahl bei Fahrenheit ein:" textFill="#ff0511">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
